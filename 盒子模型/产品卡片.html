@@ -1,6 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
-<!-- 本例子主要通过盒子模型中各种间距使图片居中使文字样式显得融洽 -->
+<!-- 本例子主要通过盒子模型中各种间距使图片居中使文字样式显得融洽， -->
+<!-- 具体像素参数由PxCook读取一个png图片来测量的，更精确的测量需要ps工具 -->
+<!-- body { background-color: #f1f1f1;} 确认整个背景色基调-->
+<!-- margin: 49px auto;使整个div在body正中间 -->
+<!-- text-align: center;使div内的所有盒子水平居中 -->
+<!-- 块级盒子line-height设置和font-height一致将保证垂直居中 -->
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -27,7 +32,7 @@
             width: 270px;
             height: 253px;
             background-color: #fff;
-
+            
             text-align: center;
             border-radius: 10px;
         }
