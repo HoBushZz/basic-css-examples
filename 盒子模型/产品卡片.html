@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<!-- 本例子主要通过盒子模型中各种间距使图片居中使文字样式显得融洽 -->
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- CSS书写顺序：1.盒子模型属性。2.文字样式。3.圆角、阴影等修饰属性 -->
+    <style>
+        /* 第一步先清除默认样式 */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            /* 防止border和padding扩充盒子模型 */
+        }
+
+        /* 确认整个Body背景色一致 */
+        body {
+            background-color: #f1f1f1;
+        }
+
+        .product {
+            margin: 49px auto;
+            padding-top: 40px;
+
+            width: 270px;
+            height: 253px;
+            background-color: #fff;
+
+            text-align: center;
+            border-radius: 10px;
+        }
+
+        /* 进一步确认字的样式 */
+        .product h4 {
+            margin-top: 20px;
+            margin-bottom: 12px;
+
+            font-size: 14px;
+            font-weight: 400;
+            color: #333;
+        }
+
+        .product p {
+            font-size: 10px;
+            font-weight: 300;
+            color: #555555;
+        }
+    </style>
+
+
+</head>
+
+<body>
+    <div class="product">
+        <img src="./img/liveSDK.svg" alt=""><!-- 由于三份内盒子都居中，居中样式就在父盒子中设置 -->
+        <h4>抖音直播看SDK</h4>
+        <p>包含抖音直播看播功能</p>
+    </div>
+</body>
+
+</html>
