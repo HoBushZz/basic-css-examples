@@ -1,0 +1,38 @@
+.service {
+    margin: 100px auto;
+    width: 1190px;
+    height: 42px;
+}
+.service ul {
+    display: flex;
+}
+.service li {
+    display: flex;
+    padding-left: 42px;
+    width: 297px;
+    height: 42px;
+}
+.service li h5{
+    margin-right: 10px;
+    width: 36px;
+    height: 42px;
+    background: url(../images/sprite.png) 0 -192px;
+}
+.service li p {
+    line-height: 42px;
+    font-size: 18px;
+    color: #444;
+    font-weight: 700;
+}
+/* li常用伪元素，因为不可能给那么多个li的内元素给定类名 */
+.service li:nth-child(2) h5{
+    background-position: -41px -192px;/* 小细节，所有的h5标签css使用复合属性，此处不是 */
+}
+/* li常用伪元素，因为不可能给那么多个li的内元素给定类名 */
+.service li:nth-child(3) h5{
+    background-position: -82px -192px;
+}
+/* li常用伪元素，因为不可能给那么多个li的内元素给定类名 */
+.service li:nth-child(4) h5{
+    background-position: -123px -192px;
+}
